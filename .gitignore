@@ -10,12 +10,13 @@ venv/
 # Terraform
 *.tfstate
 *.tfstate.*
-.terraform/
+terraform
+
 
 # Docker
 *.log
 docker-compose.override.yml
-localstack_data/
+localstack_data
 
 # VS Code
 .vscode/
