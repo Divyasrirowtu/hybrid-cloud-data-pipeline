@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+env/
+venv/
+.env
+
+# Terraform
+*.tfstate
+*.tfstate.*
+.terraform/
+
+# Docker
+*.log
+docker-compose.override.yml
+localstack_data/
+
+# VS Code
+.vscode/
