@@ -2,14 +2,13 @@ version: '3.8'
 
 services:
   localstack:
-    container_name: "localstack_main"
+    container_name: localstack_main
     image: localstack/localstack:latest
     ports:
-      - "127.0.0.1:4566:4566"
-      - "127.0.0.1:4510-4559:4510-4559"
+      - "4566:4566"
     environment:
-      - DEBUG=1
       - SERVICES=s3,sqs,dynamodb,iam
+      - DEBUG=1
       - PERSISTENCE=1
       - DATA_DIR=/tmp/localstack/data
     volumes:
