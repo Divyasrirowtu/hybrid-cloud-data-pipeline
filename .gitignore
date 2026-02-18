@@ -20,3 +20,8 @@ localstack_data
 
 # VS Code
 .vscode/
+
+.env
+*.json.key
+__pycache__/
+*.pyc
